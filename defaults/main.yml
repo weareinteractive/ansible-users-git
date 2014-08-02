@@ -1,0 +1,17 @@
+---
+# For more information about default variables see:
+# http://www.ansibleworks.com/docs/playbooks_variables.html#id26
+#
+# Extends the franklinkim.users variable with git
+#
+# users:
+#   - name: Foo Bar
+#     username: foobar
+#     authorized_keys: []
+#       git:
+#         user:
+#           name: Foo Bar
+#           email: foo@bar
+#         github:
+#           user: foobar
+#
