@@ -3,12 +3,12 @@ galaxy_info:
   author: franklin
   company: We Are Interactive
   description: Configures git for users
-  min_ansible_version: 1.4
+  min_ansible_version: 1.6
   license: MIT
   platforms:
     - name: Ubuntu
       versions:
-        - all
+        - All
   categories:
     - development
     - system

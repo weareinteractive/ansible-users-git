@@ -8,10 +8,10 @@
 #   - name: Foo Bar
 #     username: foobar
 #     authorized_keys: []
-#       git:
-#         user:
-#           name: Foo Bar
-#           email: foo@bar
-#         github:
-#           user: foobar
+#     git:
+#       user:
+#         name: Foo Bar
+#         email: foo@bar
+#       github:
+#         user: foobar
 #

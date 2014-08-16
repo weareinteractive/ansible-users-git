@@ -11,6 +11,6 @@ install:
   - ansible-galaxy install franklinkim.users
 script:
   - echo localhost > inventory
-  - ln -s ansible-role-users-git ../franklinkim.users-git
+  - ln -s ansible-users-git ../franklinkim.users-git
   - ansible-playbook --syntax-check -i inventory test.yml
   - ansible-playbook -i inventory test.yml --connection=local --sudo -vvvv
