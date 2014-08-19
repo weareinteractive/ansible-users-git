@@ -29,10 +29,11 @@ $ git clone https://github.com/weareinteractive/ansible-users-git.git
 
 ## Dependencies
 
-* [franklinkim.git](https://github.com/weareinteractive/ansible-git)
 * [franklinkim.users](https://github.com/weareinteractive/ansible-users)
 
 ## Variables
+
+Here is a list of all the default variables for this role, which are also available in `defaults/main.yml`.
 
 ```
 # Extends the franklinkim.users variable with git

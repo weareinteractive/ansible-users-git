@@ -10,6 +10,5 @@
   with_items: users
   tags:
     - system
-    - development
-    - users
-    - git
+    - users-git
+    - config

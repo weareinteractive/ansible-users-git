@@ -1,3 +1,3 @@
 ---
 
-- include: users.yml
+- include: config.yml
