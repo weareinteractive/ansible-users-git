@@ -29,7 +29,7 @@ $ git clone https://github.com/weareinteractive/ansible-users-git.git
 
 ## Dependencies
 
-* [franklinkim.users](https://github.com/weareinteractive/ansible-users)
+[franklinkim.users](https://github.com/weareinteractive/ansible-users) is not a dependency but this role was build on top of it.
 
 ## Variables
 
@@ -55,6 +55,7 @@ Here is a list of all the default variables for this role, which are also availa
 
 ```
 - host: all
+  sudo: yes
   roles: 
     - franklinkim.users-git
   vars:

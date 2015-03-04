@@ -1,13 +1,13 @@
 ---
 
 - hosts: all
+  sudo: yes
   roles:
     - franklinkim.users-git
   vars:
     users:
       - name: Foo Bar
         username: foobar
-        authorized_keys: []
         git:
           user:
             name: Foo Bar

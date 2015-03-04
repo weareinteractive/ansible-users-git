@@ -5,7 +5,7 @@
     src=home-user-gitconfig.j2
     dest=/home/{{ item.username }}/.gitconfig
     owner={{ item.username }}
-    group={{ item.group if item.group is defined else (users_group if users_group != false else item.username) }}
+    group={{ item.group if item.group is defined else (users_group if users_group else item.username) }}
     mode=0644
   with_items: users
   tags:
