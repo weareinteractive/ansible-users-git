@@ -1,14 +1,10 @@
 ---
 
 - name: Configuring git for user
-  template: >
-    src=home-user-gitconfig.j2
-    dest=/home/{{ item.username }}/.gitconfig
-    owner={{ item.username }}
-    group={{ item.group if item.group is defined else (users_group if users_group else item.username) }}
-    mode=0644
-  with_items: users
-  tags:
-    - system
-    - users-git
-    - config
+  template:
+    src: home/user/gitconfig.j2
+    dest: /home/{{ item.username }}/.gitconfig
+    owner: "{{ item.username }}"
+    group: "{{ item.group if item.group is defined else (users_group if users_group else item.username) }}"
+    mode: 0644
+  with_items: "{{ users }}"
