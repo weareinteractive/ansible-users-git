@@ -2,7 +2,7 @@
 # For more information about default variables see:
 # http://www.ansibleworks.com/docs/playbooks_variables.html#id26
 #
-# Extends the franklinkim.users variable with git
+# Extends the weareinteractive.users variable with git
 #
 # users:
 #   - name: Foo Bar
