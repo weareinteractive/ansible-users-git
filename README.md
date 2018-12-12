@@ -1,36 +1,36 @@
-# Ansible weareinteractive.users-git role
+# Ansible weareinteractive.users_git role
 
 [![Build Status](https://img.shields.io/travis/weareinteractive/ansible-users-git.svg)](https://travis-ci.org/weareinteractive/ansible-users-git)
 [![Galaxy](http://img.shields.io/badge/galaxy-weareinteractive.users-git-blue.svg)](https://galaxy.ansible.com/weareinteractive/users-git)
 [![GitHub tag](https://img.shields.io/github/tag/weareinteractive/ansible-users-git.svg)](https://github.com/weareinteractive/ansible-users-git/releases)
 [![GitHub stars](https://img.shields.io/github/stars/weareinteractive/ansible-users-git.svg?style=social&label=Star)](https://github.com/weareinteractive/ansible-users-git)
 
-> `weareinteractive.users-git` is an [Ansible](http://www.ansible.com) role which:
+> `weareinteractive.users_git` is an [Ansible](http://www.ansible.com) role which:
 >
 > * configures git for users
 
 **Note:**
 
-> Since Ansible Galaxy switched all role names to the organization name, this role has moved from `franklinkim.users-git` to `weareinteractive.users-git`!
+> Since Ansible Galaxy switched all role names to the organization name, this role has moved from `franklinkim.users-git` to `weareinteractive.users_git`!
 
 ## Installation
 
 Using `ansible-galaxy`:
 
 ```shell
-$ ansible-galaxy install weareinteractive.users-git
+$ ansible-galaxy install weareinteractive.users_git
 ```
 
 Using `requirements.yml`:
 
 ```yaml
-- src: weareinteractive.users-git
+- src: weareinteractive.users_git
 ```
 
 Using `git`:
 
 ```shell
-$ git clone https://github.com/weareinteractive/ansible-users-git.git weareinteractive.users-git
+$ git clone https://github.com/weareinteractive/ansible-users-git.git weareinteractive.users_git
 ```
 
 ## Dependencies
@@ -74,7 +74,7 @@ This is an example playbook:
 - hosts: all
   become: yes
   roles:
-    - weareinteractive.users-git
+    - weareinteractive.users_git
   vars:
     users:
       - name: Foo Bar
@@ -85,6 +85,7 @@ This is an example playbook:
             email: foo@bar
           github:
             user: foobar
+
 ```
 
 
