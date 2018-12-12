@@ -3,7 +3,7 @@
 - hosts: all
   become: yes
   roles:
-    - weareinteractive.users-git
+    - weareinteractive.users_git
   vars:
     users:
       - name: Foo Bar

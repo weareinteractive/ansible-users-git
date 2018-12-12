@@ -1,5 +1,5 @@
 PWD=$(shell pwd)
-ROLE_NAME=weareinteractive.users-git
+ROLE_NAME=weareinteractive.users_git
 ROLE_PATH=/etc/ansible/roles/$(ROLE_NAME)
 TEST_VERSION=ansible --version
 TEST_DEPS=ansible-galaxy install weareinteractive.users

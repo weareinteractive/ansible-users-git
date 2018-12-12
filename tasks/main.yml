@@ -3,5 +3,6 @@
 - import_tasks: config.yml
   tags:
     - system
+    - users
     - users-git
     - config

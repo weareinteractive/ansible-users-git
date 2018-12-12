@@ -5,7 +5,7 @@ services:
   - docker
 env:
   global:
-    - role: weareinteractive.users-git
+    - role: weareinteractive.users_git
   matrix:
     - distribution: Ubuntu
       distribution_version: "16.04"

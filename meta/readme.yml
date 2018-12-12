@@ -1,6 +1,6 @@
 ---
 
-galaxy_name: weareinteractive.users-git
+galaxy_name: weareinteractive.users_git
 github_user: weareinteractive
 github_name: ansible-users-git
 badges: |
@@ -13,4 +13,4 @@ description: |
 
   **Note:**
 
-  > Since Ansible Galaxy switched all role names to the organization name, this role has moved from `franklinkim.users-git` to `weareinteractive.users-git`!
+  > Since Ansible Galaxy switched all role names to the organization name, this role has moved from `franklinkim.users-git` to `weareinteractive.users_git`!
