@@ -1,8 +1,8 @@
 # {{ ansible_managed }}
 
-{% for section, options in (item.git|default({})).iteritems() %}
+{% for section, options in (item.git|default({})).items() %}
 [{{ section }}]
-{% for key, value in options.iteritems() %}
+{% for key, value in options.items() %}
 {{ key }} = {{ value }}
 {% endfor %}
 
