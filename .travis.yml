@@ -8,14 +8,14 @@ env:
     - role: weareinteractive.users_git
   matrix:
     - distribution: Ubuntu
+      distribution_version: "18.04"
+      init: /lib/systemd/systemd
+      run_opts: "'--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro'"
+      before_test: "'apt-get update && apt-get install -y python openssh-client'"
+    - distribution: Ubuntu
       distribution_version: "16.04"
       init: /lib/systemd/systemd
       run_opts: "--privileged --volume=/sys/fs/cgroup:/sys/fs/cgroup:ro"
-    # currently disabled due to https://github.com/ansible/galaxy/issues/795
-    # - distribution: Ubuntu
-    #   distribution_version: "14.04"
-    #   init: /sbin/init
-    #   run_opts: ""
     - distribution: Debian
       distribution_version: "9"
       init: /lib/systemd/systemd
@@ -52,7 +52,7 @@ script:
   - docker exec "$(cat ${container_id})" ansible-playbook /etc/ansible/roles/${role}/tests/main.yml | tee -a ${idempotence}
   - >
     tail ${idempotence}
-    | grep -q 'failed=0'
+    | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
